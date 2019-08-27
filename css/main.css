@@ -1,0 +1,183 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: black;
+}
+.navbar{
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 99999 !important;
+}
+.navbar-collapse{
+    position: absolute;
+}
+@media only screen and (max-width: 990px){
+    .navbar-nav{
+        background: rgba(0,0,0,.9);
+        position: absolute;
+        z-index: 5;
+        width: 80%;
+        padding: 10px;
+        font-weight: bolder;
+        left: 10%;
+    }
+}
+.navbar-collapse{
+    position: absolute;
+    left: 10%;
+}
+@media only screen and (max-width: 991px){
+    .navbar-nav{
+        background: rgba(0,0,0,.9);
+        position: absolute;
+        z-index: 5;
+        width: 80vw;
+        padding: 10px;
+        font-weight: bolder;
+        left: 10%;
+    }
+    .navbar-collapse{
+        top: 100%;
+    }
+}
+.row{
+    overflow: hidden;
+    width: 100%;
+    align-items: baseline;
+    padding: 50px;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/northEastern.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+@media only screen and (max-width: 600px){
+    .home{
+        background-size: 80vw auto;
+    }
+}
+i{
+    color: white;
+}
+.sec1{
+    width: 100%;
+    height: auto;
+    background: #121212;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    color: rgba(255,255,255,0.5)
+}
+.sec2{
+    width: 100%;
+    height: auto;
+    background: #121212;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    z-index: 1;
+    color: rgba(255,255,255,0.5)
+}
+.sec3{
+    width: 100%;
+    height: auto;
+    background: #121212;
+    position: absolute;
+    top: 300%;
+    left: 0;
+    z-index: 1;
+    color: rgba(255,255,255,0.5)
+}
+img{
+    width: 100%;
+    height: auto;
+}
+p{
+    transition: all 1s ease-in-out;
+}
+h1{
+    transition: all 2s ease-in-out;
+}
+img{
+    transition: all 2s ease-in-out;
+}
+
+h1[data-scroll="out"]:nth-of-type(1){
+    transform: translateX(-100%);
+    opacity: 0;
+}
+p[data-scroll="out"]:nth-of-type(1){
+    transform: translateX(-100%);
+    opacity: 0;
+}
+img[data-scroll="out"]:nth-of-type(1){
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+h1[data-scroll="out"]:nth-of-type(2){
+    transform: translateX(100%);
+    opacity: 0;
+}
+p[data-scroll="out"]:nth-of-type(2){
+    transform: translateX(100%);
+    opacity: 0;
+}
+img[data-scroll="out"]:nth-of-type(2){
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+h1[data-scroll="out"]:nth-of-type(3){
+    transform: translateX(-100%);
+    opacity: 0;
+}
+p[data-scroll="out"]:nth-of-type(3){
+    transform: translateX(-100%);
+    opacity: 0;
+}
+img[data-scroll="out"]:nth-of-type(3){
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background: #121212;
+    position: absolute;
+    top: 400%;
+    left: 0;
+    z-index: 1;
+    color: rgba(255,255,255,1)
+}
+.QR{
+    width: 300px;
+    height: auto;
+}
+@media only screen and (max-width:480px){
+    .QR{
+        width: 200px;
+        height: auto;
+    }
+}
+.footer-text{
+    text-align: center;
+}
+.footer-text i{
+    color: cornflowerblue;
+    font-size: 1.5em
+}

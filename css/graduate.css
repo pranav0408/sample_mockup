@@ -1,0 +1,220 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.intro{
+    width: 100%;
+    height: 60vh;
+    background: url('https://www.northeastern.edu/graduate/wp-content/uploads/2016/05/Homepage_Hero_04.jpg');
+    font-family: monospace;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+.intro-content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+.intro-logo{
+    display: none;
+}
+.intro-content p{
+    width: 60%;
+}
+.navbar{
+    font-family: cursive;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 99999 !important;
+}
+.navbar-collapse{
+    position: absolute;
+    left: 10%;
+}
+@media only screen and (max-width: 991px){
+    .navbar-nav{
+        background: rgba(0,0,0,.9);
+        position: absolute;
+        z-index: 5;
+        width: 80vw;
+        padding: 10px;
+        font-weight: bolder;
+        left: 10%;
+    }
+    .navbar-collapse{
+        top: 100%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .intro{
+        background-size: 150% auto;
+        height: 60vw;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .intro{
+        height: 80vh;
+        background: #404040
+    }
+    .intro-content{
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+    .intro-logo{
+        display: block;
+    }
+    .intro-logo i{
+        font-size: 10rem;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        z-index: 1;
+    }
+    .intro-content p{
+        width: 100%;
+    }
+}
+.catalog{
+    width: 80%;
+    position: absolute;
+    z-index: 9999;
+    height: auto;
+    top: 60%;
+    left: 10%;
+    background: white;
+    overflow: hidden;
+}
+.catalog .btn{
+    padding: 20px;
+    width: 100%;
+}
+.content .row{
+    padding-top: 20%;
+    color: rgba(255,255,255,0.8)
+}
+.content .col2{
+    margin-top: 10%;
+    font-style: italic;
+}
+.content .col2::before{
+    content: open-quote;
+    font-size: 5rem;
+    position: absolute;
+    top: -20%;
+    left: -1%;
+    font-family: fantasy;
+}
+@media only screen and (max-width: 767px){
+    .content .col2{
+        margin: 5% 5% auto auto
+    }
+    .content .col2::before{
+        left: 2%;
+    }
+}
+.content .row h3{
+    color: rgba(0,0,0,0.8);
+}
+@media only screen and (max-width: 1000px){
+    .catalog{
+        position: relative;
+    }
+}
+.content{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background: rgb(56, 160, 179);
+}
+.btn1{
+    animation: animate1 1s ease-in-out;
+}
+.btn2{
+    animation: animate2 2s ease-in-out;
+}
+.btn3{
+    animation: animate3 3s ease-in-out;
+}
+@keyframes animate1{
+    from{
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes animate2{
+    from{
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes animate3{
+    from{
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.content-content{
+    transition: all 1s ease-in-out;
+}
+h1, h3, h5{
+    transition: all 1s ease-in-out;
+}
+h2{
+    transition: all 2s ease-in-out;
+}
+h1[data-scroll="out"]{
+    transform: translateX(-50%);
+    opacity: 0;
+}
+h1[data-scroll="in"]{
+    transform: translateX(0);
+    opacity: 1;
+}
+h3[data-scroll="out"]{
+    transform: translateX(-50%);
+    opacity: 0;
+}
+h3[data-scroll="in"]{
+    transform: translateX(0);
+    opacity: 1;
+}
+h5[data-scroll="out"]{
+    transform: translateX(-50%);
+    opacity: 0;
+}
+h5[data-scroll="in"]{
+    transform: translateX(0);
+    opacity: 1;
+}
+h2[data-scroll="out"]{
+    transform: translateX(80%);
+    opacity: 0;
+}
+h2[data-scroll="in"]{
+    transform: translateX(0);
+    opacity: 1;
+}
+.content-content{
+    margin-left: 5%;
+    margin-right: 5%;
+}
